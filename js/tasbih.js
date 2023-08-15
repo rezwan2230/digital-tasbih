@@ -57,7 +57,7 @@ alhamdulillahDecrementBtn.addEventListener('click', function () {
 // Increment and decrement button for AllahuAkbar
 allahuakbarIncrementBtn.addEventListener('click', function () {
     if (allahuakbarDisplayInitial === 33) {
-        return alert('Alhamdulillah Complete. Please Fillup another one')
+        return alert('AllahuAkbar Complete. Please Fillup another one')
     }
     allahuakbarDisplayInitial += 1
     allahuakbarDisplay.innerText = allahuakbarDisplayInitial
