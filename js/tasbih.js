@@ -20,70 +20,66 @@ let allahuakbarDisplayInitial = 0
 
 // Increment and decrement button for Subhanallah
 subhanallahIncrementBtn.addEventListener('click', function () {
+    if (subhanallahDisplayInitial === 33) {
+        return alert('Subhan Allah Complete. Please Fillup another one')
+    }
     subhanallahDisplayInitial += 1
-    if (subhanallahDisplayInitial > 33) {
-        alert('Subhan Allah Complete. Please Fillup another one')
-    }
-    else {
-        subhanallahDisplay.innerText = subhanallahDisplayInitial
-    }
+    subhanallahDisplay.innerText = subhanallahDisplayInitial
 })
+
 subhanallahDecrementBtn.addEventListener('click', function () {
+    if (subhanallahDisplayInitial === 0) {
+        return alert("You can't added negative value")
+    }
     subhanallahDisplayInitial -= 1
-    if (subhanallahDisplayInitial < 0) {
-        alert("You can't added negative value")
-    }
-    else {
-        subhanallahDisplay.innerText = subhanallahDisplayInitial
-    }
+    subhanallahDisplay.innerText = subhanallahDisplayInitial
 })
 
 
 // Increment and decrement button for Alhamdulillah
 alhamdulillahIncrementBtn.addEventListener('click', function () {
+    if (alhamdulillahDisplayInitial === 33) {
+        return alert('Alhamdulillah Complete. Please Fillup another one')
+    }
     alhamdulillahDisplayInitial += 1
-    if (alhamdulillahDisplayInitial > 33) {
-        alert('Alhamdulillah Complete. Please Fillup another one')
-    }
-    else {
-        alhamdulillahDisplay.innerText = alhamdulillahDisplayInitial
-    }
+    alhamdulillahDisplay.innerText = alhamdulillahDisplayInitial
 })
+
 alhamdulillahDecrementBtn.addEventListener('click', function () {
+    if (alhamdulillahDisplayInitial === 0) {
+        return alert("You can't added negative value")
+    }
     alhamdulillahDisplayInitial -= 1
-    if (alhamdulillahDisplayInitial < 0) {
-        alert("You can't added negative value")
-    }
-    else {
-        alhamdulillahDisplay.innerText = alhamdulillahDisplayInitial
-    }
+    alhamdulillahDisplay.innerText = alhamdulillahDisplayInitial
 })
 
 
 // Increment and decrement button for AllahuAkbar
 allahuakbarIncrementBtn.addEventListener('click', function () {
+    if (allahuakbarDisplayInitial === 33) {
+        return alert('Alhamdulillah Complete. Please Fillup another one')
+    }
     allahuakbarDisplayInitial += 1
-    if (allahuakbarDisplayInitial > 33) {
-        alert('Alhamdulillah Complete. Please Fillup another one')
-    }
-    else {
-        allahuakbarDisplay.innerText = allahuakbarDisplayInitial
-    }
+    allahuakbarDisplay.innerText = allahuakbarDisplayInitial
 })
 allahuakbarDecrementBtn.addEventListener('click', function () {
+    if (allahuakbarDisplayInitial === 0) {
+        return alert("You can't added negative value")
+    }
     allahuakbarDisplayInitial -= 1
-    if (allahuakbarDisplayInitial < 0) {
-        alert("You can't added negative value")
-    }
-    else {
-        allahuakbarDisplay.innerText = allahuakbarDisplayInitial
-    }
+    allahuakbarDisplay.innerText = allahuakbarDisplayInitial
 })
 
 
 //Reset Button
 resetBtn.addEventListener('click', function () {
-    subhanallahDisplay.innerText = 0
-    alhamdulillahDisplay.innerText = 0
-    allahuakbarDisplay.innerText = 0
+
+    subhanallahDisplayInitial = 0
+    subhanallahDisplay.innerText = subhanallahDisplayInitial
+
+    alhamdulillahDisplayInitial = 0
+    alhamdulillahDisplay.innerText = alhamdulillahDisplayInitial
+
+    allahuakbarDisplayInitial = 0
+    allahuakbarDisplay.innerText = allahuakbarDisplayInitial
 })
