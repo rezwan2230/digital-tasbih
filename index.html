@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Tasbih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <style>
+        .font{
+            font-family : 'Open Sans', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <header>
+        <h1 class="font text-7xl text-center pt-52 font-bold"><span
+                class="text-transparent bg-gradient-to-r from-cyan-500 to-[#089871] bg-clip-text">Digital Tasbih</span>
+        </h1>
+    </header>
+
+    <main>
+
+        <section class="mt-16 text-center">
+
+            <div class="w-10/12 mx-auto  grid grid-cols-3 gap-7">
+
+                <div class="text-center p-12 rounded-xl bg-cyan-100">
+                    <h1 class="text-4xl font-semibold mb-10 text-[#374151]">Subhan Allah</h1>
+                    <p id="subhanallah-display" class="text-5xl text-[#374151] mb-10">0</p>
+                    <button id="subhanallah-increment-btn" class="bg-[#22C55E] rounded-xl py-4 px-8 text-md font-semibold mr-2 text-white">INCREMENT</button>
+                    <button id="subhanallah-decrement-btn" class="bg-red-500 rounded-xl py-4 px-8 text-md font-semibold text-white">DECREMENT</button>
+                </div>
+
+                <div class="text-center p-12 rounded-xl bg-cyan-100">
+                    <h1 class="text-4xl font-semibold mb-10 text-[#374151]">Alhamdulillh</h1>
+                    <p id="alhamdulillah-display" class="text-5xl text-[#374151] mb-10">0</p>
+                    <button id="alhamdulillah-increment-btn" class="bg-[#22C55E] rounded-xl py-4 px-8 text-md font-semibold mr-2 text-white">INCREMENT</button>
+                    <button id="alhamdulillah-decrement-btn" class="bg-red-500 rounded-xl py-4 px-8 text-md font-semibold text-white">DECREMENT</button>
+                </div>
+
+                <div class="text-center p-12 rounded-xl bg-cyan-100">
+                    <h1 class="text-4xl font-semibold mb-10 text-[#374151]">Allahuakbar</h1>
+                    <p id="allahuakbar-display" class="text-5xl text-[#374151] mb-10">0</p>
+                    <button id="allahuakbar-increment-btn" class="bg-[#22C55E] rounded-xl py-4 px-8 text-md font-semibold mr-2 text-white">INCREMENT</button>
+                    <button id="allahuakbar-decrement-btn" class="bg-red-500 rounded-xl py-4 px-8 text-md font-semibold text-white">DECREMENT</button>
+                </div>
+            </div>
+
+            <button id="reset-btn" class="bg-red-500 rounded-xl py-4 px-8 text-md font-semibold text-white mt-16 bg-gradient-to-r from-cyan-500 to-[#089871]">RESET ALL TASBIH</button>
+
+        </section>
+
+    </main>
+
+
+    <script src="./js/tasbih.js"></script>
 </body>
+
 </html>
